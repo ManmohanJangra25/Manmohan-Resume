@@ -2,7 +2,9 @@
   "dependencies": {
     "firebase": "^10.4.0"
   },
-  "actions": {
-    "build": ""
+  "scripts": {
+    "build": "",
+    "start": "npm run build",
+    "deploy": "firebase deploy --only hosting"
   }
 }
