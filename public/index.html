@@ -1,89 +1,705 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+﻿<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/10.4.0/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/10.4.0/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/10.4.0/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/10.4.0/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/10.4.0/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/10.4.0/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/10.4.0/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/10.4.0/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/10.4.0/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/10.4.0/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+<head>
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+<meta name="description" content="Manmohan Jangra Front End Developer">
+<meta name="author" content="Manmohan Jangra Front End Developer">
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<title>Manmohan Jangra | Front End Developer | Personal Portfolio</title>
+<link rel="icon" type="image/x-icon" href="/img/favicon.png">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="../../../../../css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<!-- /Google Fonts -->
+
+<!-- Styles -->
+<link type="text/css" rel="stylesheet" href="css/base.css?ver=4">
+<link type="text/css" rel="stylesheet" href="css/owl-carousel.css?ver=4">
+<link type="text/css" rel="stylesheet" href="css/style.css?ver=4">
+<!--[if lt IE 9]> <script src="js/modernizr.custom.js?ver=4"></script> <![endif]-->
+<!-- /Styles -->
+
+</head>
+
+<body>
+
+
+<!-- Wrapper All -->
+<div class="resumo_fn_wrapper">
+
+	<!-- MODALBOX -->
+	<div class="resumo_fn_modalbox">
+		<a class="extra_closer" href="#"></a>
+		<div class="box_inner">
+			<a class="closer" href="#"><span></span></a>
+			<div class="modal_content">
+				
+				<div class="modal_in">
+					<!-- Content comes from JS -->
+				</div>
+				
+				<div class="fn__nav" data-from="" data-index="">
+					<a href="#" class="prev">
+						<span class="text">Prev</span>
+						<span class="arrow_wrapper"><span class="arrow"></span></span>
+					</a>
+					<a href="#" class="next">
+						<span class="text">Next</span>
+						<span class="arrow_wrapper"><span class="arrow"></span></span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /MODALBOX --> 
+	
+	<div class="resumo_fn_content">
+		
+		<!-- Main Left Part -->
+		<div class="resumo_fn_left">
+
+			<!-- Page -->
+			<div class="resumo_fn_page">
+
+
+				<!-- Home Section -->
+				<section id="home">
+					<div class="container">
+						<div class="roww">
+
+							<!-- Main Title -->
+							<div class="resumo_fn_main_title" style="position: relative;">
+								<img class="gif-img" src="img/emoji-unscreen.gif" alt="" width="200">
+								<!-- <h3 class="subtitle">Introduction</h3> -->
+								<span class="titleSpan">
+									<h3 class="title newTitle">M</h3>
+									<h3 class="title newTitle">A</h3>
+									<h3 class="title newTitle">N</h3>
+									<h3 class="title newTitle">M</h3>
+									<h3 class="title newTitle">O</h3>
+									<h3 class="title newTitle">H</h3>
+									<h3 class="title newTitle">A</h3>
+									<h3 class="title newTitle">N</h3>
+								</span>
+								
+								<h3 class="newSub">FRONT-END DEVELOPER</h3>
+								<p class="desc">I am a qualified Front End developer with 2+ Years of experience in
+									Front-End Development. With a keen eye for creating engaging UI, bringing
+									products to life.</p>
+								<img src="img/signature.png" alt="" width="350">
+							</div>
+							<!-- /Main Title -->
+
+						</div>
+					</div>
+				</section>
+				<!-- /Home Section -->
+
+
+				<!-- About Section -->
+				<section id="about">
+					<div class="container">
+						<div class="roww">
+
+							<!-- Main Title -->
+							<div class="resumo_fn_main_title">
+								<h3 class="subtitle">About Me</h3>
+								<h3 class="title">Biography</h3>
+								<p class="desc">I'm a Front-end Developer with over 2+ years of experience. I'm from Delhi, India. I code and create web elements for amazing projects. I like to work with new people. New people are new experiences.</p>
+							</div>
+							<!-- /Main Title -->
+
+							<!-- About Information -->
+							<div class="resumo_fn_about_info">
+								<div class="about_left">
+									<table>
+										<tr>
+											<th>Name</th>
+											<th>Manmohan Jangra</th>
+										</tr>
+										<tr>
+											<th>Birthday</th>
+											<th>25th April 2000</th>
+										</tr>
+										<tr>
+											<th>Age</th>
+											<th>22 Years</th>
+										</tr>
+										<tr>
+											<th>Address</th>
+											<th>Delhi, India</th>
+										</tr>
+										<tr>
+											<th>Phone</th>
+											<th><a href="tel:+91-7015846550">(+91) 7015846550</a></th>
+										</tr>
+										<tr>
+											<th>Linkedin</th>
+											<th><a href="https://www.linkedin.com/in/manmohan-jangra-1b2703201/">Manmohan Jangra</a></th>
+										</tr>
+										<tr>
+											<th>Email</th>
+											<th><a href="mailto:manmohanjangra2528@gmail.com"><span
+														class="__cf_email__">manmohanjangra2528@gmail.com</span></a></th>
+										</tr>
+									</table>
+								</div>
+								<div class="about_right">
+									<!-- Download CV Button -->
+									<div class="resumo_fn_cv_btn">
+										<a href="img/cv.pdf" download="ManmohanCV">
+											<span class="icon">
+												<img src="svg/inbox.svg" alt="" class="fn__svg">
+												<img src="svg/arrow.svg" alt="" class="fn__svg arrow">
+											</span>
+											<span>Download CV</span>
+										</a>
+									</div>
+									<!-- /Download CV Button -->
+								</div>
+							</div>
+							<!-- /About Information -->
+
+
+							<!-- Tabs Shortcode -->
+							<div class="resumo_fn_tabs">
+
+								<!-- Tab: Header -->
+								<div class="tab_header">
+									<ul>
+										<li class="active"><a href="#tab1">Experience</a></li>
+										<li><a href="#tab2">Education</a></li>
+										<li><a href="#tab3">Skills</a></li>
+									</ul>
+								</div>
+								<!-- /Tab: Header -->
+
+								<!-- Tab: Content -->
+								<div class="tab_content">
+
+									<!-- #1 tab content -->
+									<div id="tab1" class="tab_item active">
+
+										<!-- Boxed List -->
+										<div class="resumo_fn_boxed_list">
+											<ul>
+												<li>
+													<div class="item">
+														<div class="item_top">
+															<h5>The Work Front</h5>
+															<span>( Jan 2022 — Today )</span>
+														</div>
+														<h3>FRONTEND DEVELOPER</h3>
+														<ul class="expLi">
+															<li>Responsible for design update on regular basis</li>
+															<li>Working on their pre build scripts.</li>
+															<li>UI Design and Development of application in Android WebView</li>
+														</ul>
+													</div>
+												</li>
+												<li>
+													<div class="item">
+														<div class="item_top">
+															<h5>Trade Serve India</h5>
+															<span>( Jul 2021-Jan 2022 )</span>
+														</div>
+														<h3>WEB DESIGNER</h3>
+														<ul class="expLi">
+															<li>Responsible to coordinating with international clients.</li>
+															<li>Creating new websites every time as per client request.</li>
+														</ul>
+													</div>
+												</li>
+												<li>
+													<div class="item">
+														<div class="item_top">
+															<h5>Team Info Tech</h5>
+															<span>( 2020 - 2021 )</span>
+														</div>
+														<h3>WEB DESIGNER</h3>
+														<ul class="expLi">
+															<li>Responsible to manage content and design on WordPress</li>
+															<li>Backlinking of websites for off-page SEO</li>
+														</ul>
+													</div>
+												</li>
+											</ul>
+										</div>
+										<!-- /Boxed List -->
+
+									</div>
+									<!-- /#1 tab content -->
+
+									<!-- #2 tab content -->
+									<div id="tab2" class="tab_item">
+
+										<!-- Boxed List -->
+										<div class="resumo_fn_boxed_list">
+											<ul>
+												<li>
+													<div class="item">
+														<div class="item_top">
+															<h5>IGNOU</h5>
+															<span>( 2021 — Persuing )</span>
+														</div>
+														<h3>PERSUING MCA</h3>
+														<!-- <p>Adipisicing Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p> -->
+													</div>
+												</li>
+												<li>
+													<div class="item">
+														<div class="item_top">
+															<h5>PT. Neki Ram College (MDU), ROHTAK</h5>
+															<span>( 2017-2020 )</span>
+														</div>
+														<h3>B.C.A</h3>
+														<!-- <p>Adipisicing Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p> -->
+													</div>
+												</li>
+												<li>
+													<div class="item">
+														<div class="item_top">
+															<h5>Triveni Memorial Sr. Sec. School</h5>
+															<span>( 2016 — 2017 )</span>
+														</div>
+														<h3>CLASS 12 (PCM) | CBSE BOARD</h3>
+														<!-- <p>Adipisicing Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p> -->
+													</div>
+												</li>
+											</ul>
+										</div>
+										<!-- /Boxed List -->
+
+									</div>
+									<!-- /#2 tab content -->
+
+									<!-- #3 tab content -->
+									<div id="tab3" class="tab_item">
+
+										<!-- Progress Bar -->
+										<div class="resumo_fn_progress_bar">
+
+											<div class="item_in">
+												<h3 class="progress_title">Aspiring MERN STACK</h3>
+											</div>
+
+											<div class="progress_item" data-value="92">
+												<div class="item_in">
+													<h3 class="progress_title">HTML5 &amp; CSS3</h3>
+													<span class="progress_percent"></span>
+													<div class="bg_wrap"><div class="progress_bg"></div></div>
+												</div>
+											</div>
+
+											<div class="progress_item" data-value="95">
+												<div class="item_in">
+													<h3 class="progress_title">Bootstrap V.4.0 &amp; 5.0</h3>
+													<span class="progress_percent"></span>
+													<div class="bg_wrap"><div class="progress_bg"></div></div>
+												</div>
+											</div>
+
+											<div class="progress_item" data-value="80">
+												<div class="item_in">
+													<h3 class="progress_title">JavaScript / JQuery</h3>
+													<span class="progress_percent"></span>
+													<div class="bg_wrap"><div class="progress_bg"></div></div>
+												</div>
+											</div>
+
+											<div class="progress_item" data-value="80">
+												<div class="item_in">
+													<h3 class="progress_title">WordPress</h3>
+													<span class="progress_percent"></span>
+													<div class="bg_wrap"><div class="progress_bg"></div></div>
+												</div>
+											</div>
+
+											<div class="progress_item" data-value="85">
+												<div class="item_in">
+													<h3 class="progress_title">Adobe Illustrator | Photoshop | Figma | Canva</h3>
+													<span class="progress_percent"></span>
+													<div class="bg_wrap"><div class="progress_bg"></div></div>
+												</div>
+											</div>
+
+											<div class="progress_item" data-value="50">
+												<div class="item_in">
+													<h3 class="progress_title">Microsoft Office</h3>
+													<span class="progress_percent"></span>
+													<div class="bg_wrap"><div class="progress_bg"></div></div>
+												</div>
+											</div>
+
+										</div>
+										<!-- /Progress Bar -->
+
+
+									</div>
+									<!-- /#2 tab content -->
+
+								</div>
+								<!-- /Tab: Content -->
+							</div>
+							<!-- /Tabs Shortcode -->
+
+
+						</div>
+					</div>
+				</section>
+				<!-- /About Section -->
+
+
+
+				<!-- Portfolio Section -->
+				<section id="portfolio">
+
+					<div class="container">
+						<div class="roww">
+							<!-- Main Title -->
+							<div class="resumo_fn_main_title">
+								<div class="my__nav">
+									<a href="#" class="prev"><span></span></a>
+									<a href="#" class="next"><span></span></a>
+								</div>
+								<h3 class="subtitle">Portfolio</h3>
+								<h3 class="title">Featured Projects <sub style="font-size: 15px; opacity: 0.5;">Some Of My Best</sub></h3>
+							</div>
+							<!-- /Main Title -->
+						</div>
+					</div>
+
+					<div class="container noright">
+						<div class="roww">
+
+							<div class="owl-carousel modal_items" data-from="portfolio" data-count="5">
+								<div class="item modal_item" data-index="1">
+									<div class="img_holder">
+										<img src="img/thumb/square.jpg" alt="">
+										<div class="abs_img" data-bg-img="img/portfolio/01.jpg"></div>
+									</div>
+									<div class="title_holder">
+										<p>Web, Mobile</p>
+										<h3><a href="https://goathomes.com.au/">GOAT Homes</a></h3>
+									</div>
+									<div class="fn__hidden">
+										<p class="fn__cat">Web, Mobile</p>
+										<h3 class="fn__title">GOAT Homes</h3>
+										<div class="img_holder">
+											<img src="img/thumb/square.jpg" alt="">
+											<div class="abs_img" data-bg-img="img/portfolio/01.jpg"></div>
+										</div>
+									</div>
+								</div>
+								<div class="item modal_item" data-index="2">
+									<div class="img_holder">
+										<img src="img/thumb/square.jpg" alt="">
+										<div class="abs_img" data-bg-img="img/portfolio/02.jpg"></div>
+									</div>
+									<div class="title_holder">
+										<p>Web, Mobile</p>
+										<h3><a href="https://visajunction.com.au/">Visa Junction</a></h3>
+									</div>
+									<div class="fn__hidden">
+										<p class="fn__cat">Web, Mobile</p>
+										<h3 class="fn__title">Visa Junction</h3>
+										<div class="img_holder">
+											<img src="img/thumb/square.jpg" alt="">
+											<div class="abs_img" data-bg-img="img/portfolio/02.jpg"></div>
+										</div>
+									</div>
+								</div>
+								<div class="item modal_item" data-index="3">
+									<div class="img_holder">
+										<img src="img/thumb/square.jpg" alt="">
+										<div class="abs_img" data-bg-img="img/portfolio/03.jpg"></div>
+									</div>
+									<div class="title_holder">
+										<p>Web, Mobile</p>
+										<h3><a href="http://thephotojunction.in.net/">The Photo Junction</a></h3>
+									</div>
+									<div class="fn__hidden">
+										<p class="fn__cat">Web, Mobile</p>
+										<h3 class="fn__title">The Photo Junction</h3>
+										<div class="img_holder">
+											<img src="img/thumb/square.jpg" alt="">
+											<div class="abs_img" data-bg-img="img/portfolio/03.jpg"></div>
+										</div>
+									</div>
+								</div>
+								<div class="item modal_item" data-index="4">
+									<div class="img_holder">
+										<img src="img/thumb/square.jpg" alt="">
+										<div class="abs_img" data-bg-img="img/portfolio/04.jpg"></div>
+									</div>
+									<div class="title_holder">
+										<p>Web, Mobile</p>
+										<h3><a href="https://platinumfx.io/">Platinum FX</a></h3>
+									</div>
+									<div class="fn__hidden">
+										<p class="fn__cat">Web, Mobile</p>
+										<h3 class="fn__title">Platinum FX</h3>
+										<div class="img_holder">
+											<img src="img/thumb/square.jpg" alt="">
+											<div class="abs_img" data-bg-img="img/portfolio/04.jpg"></div>
+										</div>
+									</div>
+								</div>
+								<div class="item modal_item" data-index="5">
+									<div class="img_holder">
+										<img src="img/thumb/square.jpg" alt="">
+										<div class="abs_img" data-bg-img="img/portfolio/05.jpg"></div>
+									</div>
+									<div class="title_holder">
+										<p>Web, Mobile</p>
+										<h3><a href="https://unififorex.com/">Unify Forex</a></h3>
+									</div>
+									<div class="fn__hidden">
+										<p class="fn__cat">Web, Mobile</p>
+										<h3 class="fn__title">Unify Forex</h3>
+										<div class="img_holder">
+											<img src="img/thumb/square.jpg" alt="">
+											<div class="abs_img" data-bg-img="img/portfolio/05.jpg"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+				</section>
+				<!-- /Portfolio Section -->
+
+
+				<!-- Contact Section -->
+				<section id="contact">
+					<div class="container">
+						<div class="roww resumo_fn_contact">
+
+							<!-- Main Title -->
+							<div class="resumo_fn_main_title">
+								<h3 class="subtitle">Contact</h3>
+								<h2 class="">Get In Touch</h2>
+								<!-- <p class="desc">Ready To Join...</p> -->
+
+								<div class="resumo_fn_contact_info">
+									<p>Address</p>
+									<h3>25/277 Gali No. 4 Nai Basti
+										Bahadurgarh, Haryana 124507</h3>
+									<p>Phone</p>
+									<h3><a href="tel:+7015846550">(+91) 7015846550</a></h3>
+									<p><a class="fn__link" href="mailto:manmohanjangra2528@gmail.com"><span
+												class="__cf_email__">manmohanjangra2528@gmail.com</span></a></p>
+								</div>
+							</div>
+							<!-- /Main Title -->
+
+							<!-- Contact Form -->
+							<!-- <form class="contact_form" action="/" method="post" autocomplete="off" data-email="manmohanjangra2528@gmail.com"> -->
+
+								<!--
+									Don't remove below code in avoid to work contact form properly.
+									You can chance dat-success value with your one. It will be used when user will try to contact via contact form and will get success message.
+								-->
+								<!-- <div class="success" data-success="Your message has been received, we will contact you soon."></div>
+								<div class="empty_notice"><span>Please Fill Required Fields!</span></div> -->
+								<!-- -->
+
+								<!-- <div class="items_wrap">
+									<div class="items">
+										<div class="item half">
+											<div class="input_wrapper">
+												<input id="name" type="text">
+												<span class="moving_placeholder">Name *</span>
+											</div>
+										</div>
+										<div class="item half">
+											<div class="input_wrapper">
+												<input id="email" type="email">
+												<span class="moving_placeholder">Email *</span>
+											</div>
+										</div>
+										<div class="item">
+											<div class="input_wrapper">
+												<input id="phone" type="text">
+												<span class="moving_placeholder">Phone</span>
+											</div>
+										</div>
+										<div class="item">
+											<div class="input_wrapper">
+												<textarea id="message"></textarea>
+												<span class="moving_placeholder">Message</span>
+											</div>
+										</div>
+										<div class="item">
+											<a id="send_message" href="#">Send Message</a>
+										</div>
+									</div>
+								</div>
+							</form> -->
+							<!-- /Contact Form -->
+
+							<!-- Contact Info -->
+							<!-- <div class="resumo_fn_contact_info">
+								<p>Address</p>
+								<h3>25/277 Gali No. 4 Nai Basti
+									Bahadurgarh, Haryana 124507</h3>
+								<p>Phone</p>
+								<h3><a href="tel:+7015846550">(+91) 7015846550</a></h3>
+								<p><a class="fn__link" href="mailto:manmohanjangra2528@gmail.com"><span
+											class="__cf_email__">manmohanjangra2528@gmail.com</span></a></p>
+							</div> -->
+							<!-- /Contact Info -->
+
+						</div>
+					</div>
+				</section>
+				<!-- /Contact Section -->
+
+
+			</div>
+			<!-- /Page -->
+
+
+			<footer id="footer">
+				<div class="footer_top">
+					<a href="#" class="resumo_fn_totop"><span></span></a>
+				</div>
+				<div class="footer_content">
+					<div class="container">
+						<p>Copyright © <span id="year"></span>. All rights reserved. <br>
+						Designed &amp; Developed by <a class="fn__link" href="javascript:void(0)">Manmohan Jangra</a>
+						</p>
+					</div>
+				</div>
+			</footer>
+
+
+		</div>
+		<!-- /Main Left Part -->
+
+		<!-- Main Right Part -->
+		<div class="resumo_fn_right">
+
+			<!-- Menu Triggger -->
+			<a href="#" class="menu_trigger">
+				<span class="text">Menu</span>
+				<span class="hamb">
+					<span></span>
+					<span></span>
+					<span></span>
+				</span>
+			</a>
+			<!-- /Menu Triggger -->
+
+			<!-- Panel Content -->
+			<div class="right_in">
+				<div class="right_top">
+					<div class="border1"></div><div class="border2"></div>
+
+					<div class="img_holder">
+						<img src="img/thumb/square.jpg" alt="">
+						<div class="abs_img" data-bg-img="img/pp.jfif"></div>
+					</div>
+					<div class="title_holder">
+						<h5>Hi There! I am</h5>
+						<h3>
+							<span class="animated_title">
+								<span class="title_in">Manmohan Jangra</span>
+								<span class="title_in">Web Developer</span>
+								<span class="title_in">Front-End Developer</span>
+							</span>
+						</h3>
+					</div>
+				</div>
+				<div class="right_bottom">
+					<a href="#contact">
+						<span class="circle"></span>
+						<span class="text">Think <strong>Twice</strong>, Code <strong>Once</strong></span>
+					</a>
+				</div>
+			</div>
+			<!-- /Panel Content -->
+
+		</div>
+		<!-- /Main Right Part -->
+	
+	</div>
+	
+	<!-- Right Hidden Navigation -->
+	<a href="#" class="resumo_fn_nav_overlay"></a>
+	<div class="resumo_fn_navigation">
+		<a href="#" class="closer"></a>
+		
+		<!-- Navigation Content -->
+		<div class="nav_in">
+			
+			<nav id="nav">
+				<h3 class="label">Menu</h3>
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+			
+			<div class="nav_footer">
+				<div class="social">
+					<ul>
+						<!-- <li><a href="#" target="_blank"><img src="svg/social/twitter.svg" alt="" class="fn__svg"></a></li> -->
+						<!-- <li><a href="#" target="_blank"><img src="svg/social/facebook.svg" alt="" class="fn__svg"></a></li> -->
+						<li><a href="https://www.instagram.com/oyemannu2528/" target="_blank"><img src="svg/social/instagram.svg" alt=""
+									class="fn__svg"></a></li>
+						<li><a href="https://github.com/ManmohanJangra/" target="_blank"><img src="svg/social/github.svg" alt=""
+									class="fn__svg"></a></li>
+						<li><a href="https://www.linkedin.com/in/manmohan-jangra-1b2703201/" target="_blank"><img
+									src="svg/social/linkedin.svg" alt="" class="fn__svg"></a></li>
+					</ul>
+				</div>
+				<div class="copyright">
+					<a href="javascript:void(0)">Developed by Manmohan</a>
+				</div>
+			</div>
+			
+		</div>
+		<!-- /Navigation Content -->
+		
+	</div>
+	<!-- /Right Hidden Navigation -->
+	
+	
+	<div class="frenify-cursor cursor-outer" data-default="yes" data-link="yes" data-slider="yes"><span class="fn-cursor"></span></div>
+	<div class="frenify-cursor cursor-inner" data-default="yes" data-link="yes" data-slider="yes"><span class="fn-cursor"><span class="fn-left"></span><span class="fn-right"></span></span></div>
+	
+</div>
+<!-- /Wrapper All -->
+
+<!-- Scripts -->
+
+<script>
+	
+</script>
+
+<script data-cfasync="false" src="../../../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/jquery.js?ver=4"></script>
+<script src="js/typed.js?ver=4"></script>
+<script src="js/owl-carousel.js?ver=4"></script>
+<script src="js/waypoints.js?ver=4"></script>
+<script src="js/nicescroll.js?ver=4"></script>
+<!--[if lt IE 10]> <script src="js/ie8.js?ver=4"></script> <![endif]-->
+<script src="js/init.js?ver=4"></script>
+<!-- /Scripts -->
+
+</body>
 </html>
