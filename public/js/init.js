@@ -357,4 +357,10 @@
     }), o(window).on("load", function () {
         setTimeout(function () {}, 10)
     }), o(window).on("scroll", function () {})
+
+
+    // Set Current Birth Year (Age)
+    var fullYear = new Date().getFullYear();
+    var currentBirthDate = fullYear - 2000;
+    document.querySelector('.currentBirthYear').innerHTML = currentBirthDate;
 }(jQuery);
